@@ -65,8 +65,9 @@ a.tag:hover{
   border-radius: .25rem;
 }
 .inlineblock { 
-  border: 1px solid black;
+  border: 1px solid white;
   width: 100px;
+  height: 100px;
   display: block;
   display: inline-block;
 }
