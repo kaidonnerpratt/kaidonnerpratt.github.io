@@ -71,3 +71,8 @@ a.tag:hover{
   display: block;
   display: inline-block;
 }
+.large{
+  font-size: 150%;
+  
+  
+}
