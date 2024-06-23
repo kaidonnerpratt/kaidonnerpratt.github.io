@@ -54,6 +54,8 @@ code{
   padding-right: 2px;
   padding-top: 2px;
   padding-bottom: 2px;
+  transition: text-shadow .1s;
+
 }
 a.tag:visited{
   color: royalblue;
@@ -64,7 +66,6 @@ a.tag:visited{
   padding-bottom: 2px;
 }
 a.tag:hover{
-  transform: scale(1.01);
   color: royalblue;
   border: 2px solid royalblue;
   border-radius: 5px;
@@ -72,6 +73,8 @@ a.tag:hover{
   padding-right: 2px;
   padding-top: 2px;
   padding-bottom: 2px;
+  text-shadow: 0 0 1px white, 0 0 .65px white;
+
 
 }
 .codebod{
@@ -93,10 +96,8 @@ a.tag:hover{
 
 }
 .blocklink{
-
   border: 0.5vw solid royalblue;
   transition: text-shadow .1s;
-  
 }
 div.blocklink:hover{
   font-size: 20px;
