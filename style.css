@@ -18,6 +18,9 @@ a:visited {
   text-decoration-color: deepskyblue;
   text-decoration-style: wavy;
 }
+code{
+  border-radius: 10px;
+}
 .spaced{
   padding-right: 25px;
 }
