@@ -65,10 +65,29 @@ a.tag:hover{
   border-radius: .25rem;
 }
 .inlineblock { 
-  border: 1px solid white;
-  width: 100px;
-  height: 100px;
-  display: block;
+  border: 0.5vw solid white;
+  width: 14vw;
+  height: 14vw;
   display: inline-block;
-}
+  vertical-align: top;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  border-radius: 2.5vw;
+  font-size: 1vw;
 
+}
+.blocklink{
+
+  border: 0.5vw solid blue;
+  
+}
+div.blocklink:hover{
+  padding-left: 0vw;
+  padding-right: 0vw;
+  padding-top: 0vw;
+  padding-bottom: 0vw;
+  transform: scale(1.05);
+  border: 1vw solid rebeccapurple;
+}
