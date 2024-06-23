@@ -63,5 +63,10 @@ a.tag:hover{
 .codebod{
   background-color: rgb(20, 20, 20);
   border-radius: .25rem;
-
+}
+.inlineblock { 
+  border: 1px solid black;
+  width: 100px;
+  display: block;
+  display: inline-block;
 }
