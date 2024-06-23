@@ -44,24 +44,31 @@ a:visited {
 }
 .tag{
   color: royalblue;
-  border: 1px solid royalblue;
+  display: inline-block;
+  border: 2px solid royalblue;
   border-radius: 99999px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 a.tag:visited{
-  color: royalblue;
-  border: 3px solid royalblue;
-  
-  padding-left: 5px;
-  padding-right: 5px;
+  color: rebeccapurple;
+  border: 2px solid rebeccapurple;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 a.tag:hover{
+  transform: scale(1.05);
   color: rebeccapurple;
-  border: 3px solid rebeccapurple;
+  border: 2px solid rebeccapurple;
   border-radius: 99999px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 .codebod{
   background-color: rgb(20, 20, 20);
