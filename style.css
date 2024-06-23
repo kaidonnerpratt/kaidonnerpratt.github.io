@@ -1,0 +1,67 @@
+html {
+  height: 100%;
+  width: 40%;
+  margin: auto;
+}
+body{
+  background-color: rgb(40, 40, 40);
+  color: white;
+  font-size: 110%;
+}
+a {
+  color: white;
+  text-decoration-color: deepskyblue;
+  text-decoration-style: wavy;
+}
+a:visited {
+  color: white;
+  text-decoration-color: deepskyblue;
+  text-decoration-style: wavy;
+}
+.spaced{
+  padding-right: 25px;
+}
+.right{
+  float: right;
+}
+.ycircle{
+  border: 5px solid yellow;
+  border-radius: 500px;
+  object-fit: scale-down;
+  
+}
+.nodec{
+  text-decoration: none;
+}
+.compressed{
+  line-height: 1px;
+}
+.grey {
+  color: lightgray;
+}
+.tag{
+  color: royalblue;
+  border: 1px solid royalblue;
+  border-radius: 99999px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+a.tag:visited{
+  color: royalblue;
+  border: 3px solid royalblue;
+  border-radius: 99999px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+a.tag:hover{
+  color: rebeccapurple;
+  border: 3px solid rebeccapurple;
+  border-radius: 99999px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.codebod{
+  background-color: rgb(20, 20, 20);
+  border-radius: .25rem;
+
+}
