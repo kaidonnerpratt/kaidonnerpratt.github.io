@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pkai100-blog-why I made this website</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/stackoverflow-dark.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+
+  <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+  <h2>Pkai1000</h2>
+  <a href='/' class="spaced">home</a><a href='/blog.html' class="spaced">blog</a><a href='/tags.html' class="spaced">tags</a>
+  <hr>
+  <p>Hey there!</p>
+  <p>As the title says, I just made a simulation with AI. This is how I made it.</p>
+  <p>I needed to do some prep. I decided to use python for this progect becouse I am very good with it. I also decided to use pygame to render the scene.</p>
+  <pre>
+  <code class = "hljs python">
+    import pygame as p
+
+    screen = p.display.set_mode((900, 900)) 
+
+    p.display.set_caption('AI sim') 
+    
+    screen.fill(c.grey) 
+
+    p.display.flip() 
+
+    running = True
+
+    while running: 
+      #do stuff
+  </code>
+  </pre>
+  <p>I knew I wanted their to be some sort of "prey" and predators(preds) to eat them. so, the first thing I did was find a way to draw some little guys on my screen. I thought about useing images, but useing math seemed more fun. To speed up the math, I used a list full of all the sin() and cos() values and put them in a table. I then used pointOnCircle() to get stuff from said table.</p>
+  <pre>
+    <code class = "language-python">
+      def drawcritter(color, pos, rotation, screen):
+
+        p.draw.circle(screen, color, pos, 10)
+
+        p.draw.circle(screen, c.white, pointOnCircle(pos, rotation, 345, 10, lst), 3)
+        p.draw.circle(screen, c.black, pointOnCircle(pos, rotation, 345, 11, lst), 1)
+
+        p.draw.circle(screen, c.white, pointOnCircle(pos, rotation, -345, 10, lst), 3)
+        p.draw.circle(screen, c.black, pointOnCircle(pos, rotation, -345, 11, lst), 1)
+    </code>
+    </pre>
+  <p>I was goint to use <a href="https://www.tensorflow.org/">tensorflow</a>, but decided to make my own library. It's not actualy a library, but I'm calling it that. You can see the code for it on <a href="https://github.com/kaidonnerpratt/ai-pred-prey-sim/blob/main/pyai.py">this progects github</a>. Anyway, I'm not showing that code becouse It's too much to show.</p>
+  <p>Once I implimented the AI and finished coded some more things, A glareing problem staired me in my face. It ran at less then 1 fps. I serched for a way to fix this, and came across multiprocessing, something that seemed to solve the issue. but it still only bumped it up to 1.5 fps. thankfully, I also came across <a href = "https://numba.pydata.org/">numba</a>, and helped bump it up to 3 fps.</p> 
+  <p>And thats where it stayed for a long time. I was stuck. Anything I added tryed did... nothing. So, exhausted and tired, I tryed removeing. removeing the multiprocessing. The first thing I added. It worked. It bumped the fps up to 14 fps with 100 agents. The max it could go before I removed it. And with 200 agents, 3 fps.</p>
+
+  <p>I then just added the logic for eating prey, reproduceing, and dieing. Suddently, I had a solid sim.</p>
+  
+  
+  <script src="../script.js"></script>
+
+  
+</body>
+
+</html>
