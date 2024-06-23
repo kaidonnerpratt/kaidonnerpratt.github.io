@@ -46,29 +46,30 @@ a:visited {
   color: royalblue;
   display: inline-block;
   border: 2px solid royalblue;
-  border-radius: 99999px;
+  border-radius: 5px;
   padding-left: 2px;
   padding-right: 2px;
   padding-top: 2px;
   padding-bottom: 2px;
 }
 a.tag:visited{
-  color: rebeccapurple;
-  border: 2px solid rebeccapurple;
+  color: royalblue;
+  border: 2px solid royalblue;
   padding-left: 2px;
   padding-right: 2px;
   padding-top: 2px;
   padding-bottom: 2px;
 }
 a.tag:hover{
-  transform: scale(1.05);
-  color: rebeccapurple;
-  border: 2px solid rebeccapurple;
-  border-radius: 99999px;
+  transform: scale(1.01);
+  color: royalblue;
+  border: 2px solid royalblue;
+  border-radius: 5px;
   padding-left: 2px;
   padding-right: 2px;
   padding-top: 2px;
   padding-bottom: 2px;
+
 }
 .codebod{
   background-color: rgb(20, 20, 20);
